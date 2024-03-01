@@ -1,0 +1,379 @@
+
+   
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Roboto, Times, serif;
+    
+}
+
+body {
+    background-image: linear-gradient(to right,rgb(21, 21, 179) , rgb(92, 15, 92))
+  }
+  .logo {
+    width: 50px;
+  }
+
+.container{
+    width: 100%;
+    height: 100vh;
+    background-image: url(images/background.jpg);
+    background-position: center;
+    background-size: cover;
+    color: #fff;
+}
+
+a {
+    color: #fff;
+    text-decoration: none;
+}
+.navbar {
+    display: flex;
+    position: relative;
+    justify-content: space-between;
+    align-items: center;
+    background-image: linear-gradient(to right,rgb(21, 21, 179) , rgb(92, 15, 92));
+    color: white;
+    padding: 10px 10px;
+}
+
+
+
+.navbar-links {
+    height: 100%;
+}
+
+.navbar-links ul {
+    display: flex;
+    margin: 0;
+    margin-right: 40px;
+    padding: 0;
+}
+
+.navbar-links li {
+    list-style: none;
+    
+}
+
+.navbar-links li a {
+    display: block;
+    text-decoration: none;
+    color: white;
+    padding: 1rem;
+    text-transform: uppercase;
+    font-weight: 700;
+}
+
+.navbar-links li:hover {
+    background-color: #555;
+}
+
+.toggle-button {
+    position: absolute;
+    top: .75rem;
+    right: 1rem;
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 30px;
+    height: 21px;
+}
+
+.toggle-button .bar {
+    height: 3px;
+    width: 100%;
+    background-color: white;
+    border-radius: 10px;
+}
+
+@media (max-width: 800px) {
+    .navbar {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .toggle-button {
+        display: flex;
+    }
+
+    .navbar-links {
+        display: none;
+        width: 100%;
+    }
+
+    .navbar-links ul {
+        width: 100%;
+        flex-direction: column;
+    }
+
+    .navbar-links ul li {
+        text-align: center;
+    }
+
+    .navbar-links ul li a {
+        padding: .5rem 1rem;
+    }
+
+    .navbar-links.active {
+        display: flex;
+    }
+}
+
+
+.content .btn  {
+    text-decoration: none;
+    border: 1px solid #fff;
+    padding: 10px 30px;
+    border-radius: 20px;
+    background-color: orange;
+
+}
+
+nav .btn  {
+    text-decoration: none;
+    color: #fff;
+    border: 1px solid #fff;
+    padding: 10px 30px;
+    border-radius: 20px;
+    background-color: transparent;
+
+}
+.btn:hover {
+    color: black;
+    background-color: rgb(189, 99, 25);
+    transition-duration: 0.5s;
+    
+}
+
+.content {
+    margin-top: 12%;
+    margin-left: 4%;
+}
+
+.content h1 {
+    font-size: 88px;
+    margin-bottom: 15px;
+}
+
+.content h1 span {
+    color:orange;
+}
+
+.content p {
+    line-height: 22px;
+    font-size: 15px;
+    margin-bottom: 20px;
+}
+
+.coin-list {
+    position: absolute;
+    right: 10%;
+    bottom: 40px;
+    display: flex;
+    align-items: center;
+    flex-flow: row wrap;
+    
+}
+@media(max-width: 735px){
+    .coin-list{
+      flex-direction: column;
+      gap: 20px;
+      right: 3%;
+ 
+    }}
+.coin{
+    display: flex;
+    align-items: center;
+    font-size: 14px;
+    margin: 0 15px ;
+    color: orange;
+    border: 1px solid #fff;
+    padding: 20px 30px;
+    border-radius: 8px;
+    background-color:rgb(12, 11, 11) ;
+    
+    
+}
+.coin img {
+    width: 40px;
+    margin-right: 10px;
+}
+
+.coin h3 {
+    color: #fff;
+    margin-bottom: 5px;
+}
+
+.crypto-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-gap: 20px;
+}
+
+.crypto-item {
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    background-color: #fff;
+}
+
+
+@media (max-width: 600px) {
+    .crypto-item{
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+}
+
+
+.crypto-item img {
+    width: 50px;
+    height: 50px;
+    display: block;
+    margin: 0 auto 10px;
+}
+
+.crypto-item h3 {
+    color: black;
+    font-size: 18px;
+    text-align: center;
+    margin: 0;
+}
+
+.crypto-item p {
+    font-size: 14px;
+    margin: 5px 0;
+}
+
+.buttonn  {
+    text-decoration: none;
+    border: 1px solid #000000;
+    padding: 3px 15px;
+    justify-items: center;
+   
+    font-weight: 500;
+    border-radius: 20px;
+    background-color: orange;}
+
+
+.crypto-item .price {
+    font-size: 16px;
+    font-weight: bold;
+    color: black;
+}
+
+.crypto-item .market-cap,
+.crypto-item .price-change,
+.crypto-item .volume {
+    font-size: 14px;
+    color: #666;
+}
+
+.crypto-item .price-change-up {
+    font-size: 14px;
+    color: green;
+    font-weight: 700;
+}
+.crypto-item .price-change-down {
+    font-size: 14px;
+    color: red;
+    font-weight: 700;
+}
+
+.name {
+    margin-left: 3%;
+    margin-top: 420px;
+    margin-bottom: 20px;
+    font-weight: 700;
+    font-size: 70px;
+}
+.name span {
+    color: orange;
+}
+
+.footer-container{
+	max-width: 1170px;
+	margin:auto;
+}
+.row{
+	display: flex;
+	flex-wrap: wrap;
+}
+footer ul{
+	list-style: none;
+}
+.footer{
+	background-color: #24262b;
+    padding: 70px 0;
+    margin-top: 35px;
+    border-radius: 6px;
+}
+.footer-col{
+   width: 25%;
+   padding: 0 15px;
+}
+.footer-col h4{
+	font-size: 18px;
+	color: #ffffff;
+	text-transform: capitalize;
+	margin-bottom: 35px;
+	font-weight: 500;
+	position: relative;
+}
+.footer-col h4::before{
+	content: '';
+	position: absolute;
+	left:0;
+	bottom: -10px;
+	background-color: #e91e63;
+	height: 2px;
+	box-sizing: border-box;
+	width: 50px;
+}
+.footer-col ul li:not(:last-child){
+	margin-bottom: 10px;
+}
+.footer-col ul li a{
+	font-size: 16px;
+	text-transform: capitalize;
+	color: #ffffff;
+	text-decoration: none;
+	font-weight: 300;
+	color: #bbbbbb;
+	display: block;
+	transition: all 0.3s ease;
+}
+.footer-col ul li a:hover{
+	color: #ffffff;
+	padding-left: 8px;
+}
+.footer-col .social-links a{
+	display: inline-block;
+	height: 40px;
+	width: 40px;
+	background-color: rgba(255,255,255,0.2);
+	margin:0 10px 10px 0;
+	text-align: center;
+	line-height: 40px;
+	border-radius: 50%;
+	color: #ffffff;
+	transition: all 0.5s ease;
+}
+.footer-col .social-links a:hover{
+	color: #24262b;
+	background-color: #ffffff;
+}
+
+/*responsive*/
+@media(max-width: 767px){
+  .footer-col{
+    width: 50%;
+    margin-bottom: 30px;
+}
+}
+@media(max-width: 574px){
+  .footer-col{
+    width: 100%;
+}
+}

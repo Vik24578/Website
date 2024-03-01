@@ -1,0 +1,80 @@
+
+
+
+
+  .success-box {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    max-width: 400px; 
+    padding: 20px;
+    max-height: 100vh;
+    background-color: rgb(238, 189, 144);
+    border: 1px solid rgb(218, 205, 29);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    text-align: center;
+  }
+  .image{
+    max-width: 250px;
+    max-height: 150px;
+    margin:auto;
+  }
+
+
+  .button-container {
+    display: inline-block;
+    margin-top: 10px;
+    align-items: center;
+    justify-content: center;
+  }
+
+ .count {
+    color: rgb(3, 5, 5);
+    margin-left: 10px;
+    margin-right: 10px;
+    font-weight: 700;
+    padding: 2px 6px;
+    border: solid black 1px;
+    border-radius: 5px;
+    background-color: aliceblue;
+ }
+  .close-button {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    font-weight: 900;
+  }
+  
+  .qtn-btn {
+    margin: 0;
+    font-size: 14px;
+    padding: 3px 8px;
+    border: solid black 1px;
+    border-radius: 50%;
+    background-color: rgb(209, 146, 27);
+  }
+  .minuss {
+    padding: 3px 10px;
+    margin: 0;
+    font-size: 14px;
+    border: solid black 1px;
+    border-radius: 50%;
+    background-color: rgb(209, 146, 27);
+  }
+  .qtn-btn:hover {
+    cursor: pointer;
+    background-color: rgb(255, 187, 62);
+    transition: 0.3s ease;
+    box-shadow:2px 1px 5px rgba(0, 0, 0, 0.5) ;
+  }
+
+  .minuss:hover {
+    cursor: pointer;
+    background-color: rgb(255, 187, 62);
+    transition: 0.3s ease;
+    box-shadow:2px 1px 5px rgba(0, 0, 0, 0.5) ;
+  }

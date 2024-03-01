@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+    
+</head>
+<body>
+    <div class="container">
+        <nav class="navbar">
+            <a href="/index.html" class="brand-title"><img src="images/logo.png"  class="logo" alt="logo"></a>
+            <a href="#" class="toggle-button">
+              <span class="bar"></span>
+              <span class="bar"></span>
+              <span class="bar"></span>
+              <span class="bar"></span>
+            </a>
+            <div class="navbar-links">
+              <ul>
+                <li><a href="#crypto-list">Market</a></li>
+                <li><a href="/white-paper.html">White Paper</a></li>
+                <li><a href="#footer">Contact</a></li>
+                <li class="login-button" ><a href="/login.html" id="login-btn">Login/Sign up</a></li>
+              </ul>
+            </div>
+          </nav>
+
+
+        <div class="content">
+            <h1>Current <span>Crypto</span> <br> Prices</h1>
+            <p>THE BEST webiste to check <br>crypto prices</p>
+            <a href="#crypto-list" class="btn">EXPLORE MORE</a>
+        </div>
+
+        <div class="coin-list">
+            <div class="coin btc">
+                <img src="images/bitcoin.png" alt="bitcoin">
+                <div>
+                    <h3>$ <span id="bitcoin"></span></h3>
+                    <p>Bitcoin</p>
+                </div>
+            </div>
+            <div class="coin eth">
+                <img src="images/ethereum.png" alt="bitcoin">
+                <div>
+                    <h3>$ <span id="ethereum"></span></h3>
+                    <p>Ethereum</p>
+                </div>
+            </div>
+            <div class="coin dog">
+                <img src="images/dogecoin.png" alt="bitcoin">
+                <div>
+                    <h3>$<span id="dogecoin"></span></h3>
+                    <p>Dogecoin</p>
+                </div>
+            </div>
+           
+        <div class="white-paper" id="white-paper"></div>
+        
+
+    </div>
+            <h1 class="name"><span>Crypto</span> List </h1>
+    <div class="crypto-list" id="crypto-list">     
+    </div>
+
+    <footer class="footer" id="footer">
+        <div class="footer-container">
+            <div class="row">
+                <div class="footer-col">
+                    <h4>Company</h4>
+                    <ul>
+                        <li><a href="#">about us</a></li>
+                        <li><a href="#">our services</a></li>
+                        <li><a href="#">privacy policy</a></li>
+                        <li><a href="#">affilate program</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Where to buy</h4>
+                    <ul>
+                        <li><a href="#">Binance</a></li>
+                        <li><a href="#">Coinbase</a></li>
+                        <li><a href="#">Bybit</a></li>
+                        <li><a href="#">Kraken</a></li>
+                        <li><a href="#">Kucoin</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4> popular crypto</h4>
+                    <ul>
+                        <li><a href="https://www.coingecko.com/pl/waluty/bitcoin">bitcoin</a></li>
+                        <li><a href="https://www.coingecko.com/pl/waluty/ethereum">ethereum</a></li>
+                        <li><a href="https://www.coingecko.com/pl/waluty/dogecoin">dogecoin</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Contact </h4>
+                    <div class="social-links">
+                    <a href="mailto:wiktor.paras23@gmail.com" class="fa fa-envelope"></a>
+  	 				<a href="https://github.com/Vik24578"><i class="fab fa-github"></i></a>
+  	 				<a href="https://www.linkedin.com/in/wiktor-paras-506a7420b/"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+    
+</body>
+</html>
